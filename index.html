@@ -39,8 +39,7 @@
           <li class="list-item">
             <a href="mailto:info@devstudio.com" class="list-mail"
               ><svg class="icon-mail" width="16" height="12">
-                <use href="./img/icons.svg#icon-mail"></use>
-                </svg>info@devstudio.com
+                <use href="./img/icons.svg#icon-mail"></use></svg              >info@devstudio.com
             </a>
           </li>
           <li class="list-item">
@@ -63,7 +62,6 @@
             Заказать услугу
           </button>
         </div>
-       
       </section>
 
       <section class="qualities">
@@ -516,10 +514,8 @@
     </main>
 
     <footer class="footer-block">
-      <div class="container">
-        <ul class="container-items">
-          <li class="container-item">
-        <div>
+      <div class="container container-item">
+        <div class="adress-container">
           <a href="index.html" class="footer-link"
             ><span class="link-web">Web</span
             ><span class="studio-link">Studio</span></a
@@ -542,8 +538,7 @@
             </ul>
           </address>
         </div>
-        </li>
-        <li class="container-item">
+
         <div class="footer-tale">
           <p class="footer-titel">присоединяйтесь</p>
           <ul class="social-footer">
@@ -601,30 +596,31 @@
             </li>
           </ul>
         </div>
-        </li>
-        <li class="container-item">
+
         <div class="subscription">
           <form>
             <label>
               <p class="footer-titel">Подпишитесь на рассылку</p>
-              <input  class="email-type" type="email" name="email"
-              placeholder="E-mail">   
-            <button type="button" class="subscription-button">
               
-              <span class="subscription-item">Подписаться</span>
-              <svg class="subscription-icon" width="24" height="24">
-                <use href="./img/icons.svg#icon-send"></use>
-              </svg>
+                <input
+                  class="email-type"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="button" class="subscription-button">
+                Подписаться
+                <svg class="subscription-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             
-            </button>
-          </label>
           </form>
-          </div>
-          </li>
-        </ul>
         </div>
+      </div>
     </footer>
-  </div>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="icon-x" data-modal-close>
@@ -633,7 +629,7 @@
           </svg>
         </button>
       </div>
-    <script src="./js/modal.js"></script>
+      <script src="./js/modal.js"></script>
     </div>
   </body>
 </html>

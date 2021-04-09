@@ -305,8 +305,8 @@
 
     <!--Подвал-->
     <footer class="footer-block">
-      <div class="container">
-        <div>
+      <div class="container container-items">
+        <div class="adress-container">
           <a href="index.html" class="footer-link"
             ><span class="link-web">Web</span
             ><span class="studio-link">Studio</span></a
@@ -329,6 +329,7 @@
             </ul>
           </address>
         </div>
+
         <div class="footer-tale">
           <p class="footer-titel">присоединяйтесь</p>
           <ul class="social-footer">
@@ -385,6 +386,28 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="subscription">
+          <form>
+            <label>
+              <p class="footer-titel">Подпишитесь на рассылку</p>
+              
+                <input
+                  class="email-type"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="button" class="subscription-button">
+                Подписаться
+                <svg class="subscription-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            
+          </form>
         </div>
       </div>
     </footer>

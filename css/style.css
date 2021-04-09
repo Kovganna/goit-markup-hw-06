@@ -82,7 +82,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
-  padding-right: 15px;
+  /* padding-right: 15px; */
   /* outline: 2px solid purple; */
 }
 
@@ -812,8 +812,8 @@ footer {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
+  border-radius: 4px;
+  border: none;
 }
 
 .subscription-button > .subscription-icon {
@@ -822,17 +822,6 @@ border: none;
   fill: var(--primary-white-color);
 }
 
-.container-items {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: -60px;
-  margin-right: -70px;
-}
-
-.subscription-item {
-}
 
 /* Портфолио */
 

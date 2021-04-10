@@ -779,7 +779,7 @@ footer {
 .icon-x {
   position: absolute;
   left: 490px;
-  top: 0;
+  top: 8px;
   border-radius: 50%;
 
   width: 30px;
@@ -793,18 +793,28 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+.form {
+  width: 448px;
+  height: 466px;
+  margin-right: 39px;
+  margin-bottom: 40px;
+  margin-left: 41px;
+  outline: 1px solid purple;
+
 }
 
-form p {
+.modal-titel {
 font-weight: 700;
 font-size: 20px;
 line-height: 1.115;
 text-align: center;
 color: var(--title-text-color);
 margin-bottom: 12px;
+margin-top: 40px;
+}
+
+.modal-field {
+  outline: 1px solid tomato;
 }
 
 .modal-item {
@@ -815,7 +825,7 @@ color: var(--icon-color-header);
 margin-bottom: 4px;
 }
 
-label {
+.modal-list {
   display: flex;
   flex-direction: column;
 }

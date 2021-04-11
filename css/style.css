@@ -920,6 +920,7 @@ margin-bottom: 4px;
 .condition {
   text-decoration-line: underline;
   color: var(--accent-color);
+  margin-left: 6px;
 
 }
 

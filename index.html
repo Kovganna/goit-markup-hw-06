@@ -625,43 +625,43 @@
       <div class="modal">
         <h1 class="modal-titel">Оставьте свои данные, мы вам перезвоним</h1>
         <form class="form js-speaker-form" autocomplete="on">
-                   
-          <div class="modal-field">
-            <lable class="form-label">
+                    
+            <lable class=" modal-field form-label">
              <span class="form-name">Имя</span>
              <input type="text" name="name_lastname" class="form-input" autofocus required>
             <svg class="form-icon"><use href="./img/icons.svg#icon-person"></use></use></svg>
             </lable>
-          </div>
-          <div class="modal-field">
-            <lable class="form-label">
+          
+            <lable class="modal-field form-label">
              <span class="form-name">Телефон</span>
             <input type="tel" name="tel" class="form-input" placeholder="" required>
             <svg class="form-icon"><use href="./img/icons.svg#icon-phone-modal"></use></use></svg>
             </lable>
-          </div>
-          <div class="modal-field">
-            <lable class="form-label">
+          
+            <lable class="modal-field form-label">
              <span class="form-name">Почта</span>
             <input type="email" name="email" class="form-input" placeholder="" required>
             <svg class="form-icon"><use href="./img/icons.svg#icon-email-modal"></use></use></svg>
             </lable>
-          </div>
-          <div class="modal-field comments">
-            <lable class="form-label">
+          
+            <lable class="modal-field comments form-label">
              <span class="form-name">Комментарий</span>
             <textarea type="comment" rows="5" placeholder="Введите текст" class="form-textarea"></textarea>
            </lable>
-          </div>
+          
 
           <div class="last-field">
             <lable class="label-form">
-              <input type="checkbox" name="agreement" class="agreement-box" required>
+              <input class="checkbox" type="checkbox" name="topic" value="agree" required>
+              <span class="check-icon"></span>
+              <!-- <svg class="check-icon" wigth="16" height="15">
+                <use href="./img/icons.svg#icon-vector"></use>
+              </svg> -->
               Соглашаюсь с рассылкой и принимаю
               <a href="" class="condition">Условия договора</a>
             </lable>
           </div>
-        <button type="submit">Отправить </button>
+        <button type="submit">Отправить</button>
         </form>
         
         <button class="icon-x" data-modal-close>

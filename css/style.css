@@ -965,7 +965,7 @@ margin-bottom: 4px;
   border-radius: 2px;
 }
 
-.checkbox:checked + .check-icon {
+.checkbox:checked+.check-icon {
   background-color: var(--accent-color);
 }
 

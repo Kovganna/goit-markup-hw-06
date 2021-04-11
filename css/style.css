@@ -791,7 +791,15 @@ footer {
 
   background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
 }
+
+.icon-x:hover,
+.icon-x:focus {
+  fill: var(--accent-color);
+} 
 
 form {
   margin: 0;
@@ -808,7 +816,7 @@ form {
     /* outline: 1px solid purple; */
 }
 
-.form-lable,
+.form-label,
 .lable-form {
   font-size: 12px;
   line-height: 1.17;
@@ -821,8 +829,13 @@ form {
   border-radius: 4px;
 }
 
+.form-input:focus+.form-label {
+
+}
 
 .modal-field input {
+   width: 438px;
+   height: 40px;
    margin: 0;
    padding: 11px 12px;
    border: 1px solid rgba(33, 33, 33, 0.2);
@@ -843,8 +856,8 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-field textarea{
-  width: 416px;
-  height: 96px;
+  width: 438px;
+  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -862,22 +875,16 @@ margin-top: 40px;
 .form-label{
   display: flex;
   flex-direction: column;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
-.form-label:last-child{
-  margin-bottom: 20px;
+.form-name {
+  margin-bottom: 4px;
 }
 
 .last-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
-}
-
-.modal-field {
-  /* outline: 1px solid tomato; */
-  margin-bottom: 10px;
 }
 
 .modal-field.comments {
@@ -903,16 +910,20 @@ margin-bottom: 4px;
   text-align: center;
 }
 
+
 .agreement-box input[type='checkbox'] {
  background-image: url("..//img/icons.svg#icon-vector-border");
  width: 16px;
  height: 15px;
 }
 
+.agreement-box {
+  margin-left: 9px;
+}
+
 .label-form {
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: ;
+  align-items: center;
   line-height: 1.71;
   color: var(--icon-color-header);
 }

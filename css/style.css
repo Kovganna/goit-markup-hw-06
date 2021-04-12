@@ -940,66 +940,49 @@ margin-bottom: 4px;
   
 }
 
-
 .checkbox {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  position: absolute;  */
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden; 
 }
 
-.label-form {
-  display: flex;
-  align-items: center;
-  /* justify-content: space-between;
+.check-label {
   margin-bottom: 30px;
-  color: var(--icon-color-header) */
 }
 
-.checkbox-titel {
-    padding: 0;
-    margin-bottom: 0;
-    margin-right: 9px;
+.checkbox-box {
+ display: inline-block;
+ justify-content: center;
+ width: 16px;
+ height: 15px;
+ border: 1.5px solid var(--title-text-color);
+ background-color: var(--primary-white-color);
+ border-radius: 2px;
+ margin-right: 9px;
+ 
 }
 
-.check-icon {
-  display: inline-block;
-  justify-content: center;
-  width: 16px;
-  height: 15px;
-  /* margin-right: 9px; */
-
-  /* background-color: tomato; */
-  border: 1px solid var(--title-text-color);
-  border-radius: 2px;
-  box-sizing: border-box;
-  cursor: pointer;
-  
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-              background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.checkbox:checked + .check-icon {
-  border-color: var(--accent-color);
-  background-color:var(--accent-color);
-  background-image: url('../img/icons.svg#icon-vector');
+.checkbox:checked + .checkbox-box {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color) ;
+  background-image: url(../img/vector.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: contain;
   background-origin: border-box;
-  color: var(--primary-white-color);
 }
 
-  
-
-
-.condition {
-  text-decoration-line: underline;
+.checkbox-link {
   color: var(--accent-color);
+  text-decoration: underline ;
   margin-left: 6px;
-
 }
+
 
 .form button {
   margin: auto;

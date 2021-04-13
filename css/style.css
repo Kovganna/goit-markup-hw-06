@@ -82,7 +82,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
-  /* padding-right: 15px; */
+  padding-right: 15px;
   /* outline: 2px solid purple; */
 }
 
@@ -288,8 +288,6 @@ img {
   padding: 10px 32px;
   border: none;
 }
-
-
 
 /* Наши положительные качества*/
 
@@ -576,6 +574,10 @@ footer {
   flex-wrap: nowrap;
 }
 
+.label-footer {
+  display: flex;
+}
+
 .footer-block .container {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -693,13 +695,12 @@ footer {
 .subscription {
   padding-top: 12px;
   margin: 0;
-  
 }
 
 .email-type {
   padding: 15px 0px 15px 16px;
   width: 358px;
-  
+
   font-size: 16px;
   line-height: 1.25;
 
@@ -727,7 +728,7 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-    
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -736,7 +737,6 @@ footer {
 }
 
 .subscription-button > .subscription-icon {
-  
   margin-left: 10px;
   fill: var(--primary-white-color);
 }
@@ -793,13 +793,13 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-x:hover,
 .icon-x:focus {
   fill: var(--accent-color);
-} 
+}
 
 form {
   margin: 0;
@@ -807,28 +807,24 @@ form {
 }
 
 .form {
-  
-    width: 100%;
-    height: 100%;
-    padding-left: 41px;
-    padding-bottom: 40px;
-    padding-right: 39px;
-    /* outline: 1px solid purple; */
-}
+  width: 100%;
+  height: 100%;
+  padding-left: 41px;
+  padding-bottom: 40px;
+  padding-right: 39px;
 
-.form-label,
-.lable-form {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--icon-color-header);
-} 
+  /* outline: 1px solid purple; */
+}
 
 .form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea {
+  resize: none;
 }
 
 .form-textarea:focus,
@@ -842,28 +838,27 @@ form {
 .form-input:focus ~ .form-icon,
 .form-input:hover ~ .form-icon
 /* .form-label:focus-within > .form-icon,
-.form-label:hover-within > .form-icon*/ { 
+.form-label:hover-within > .form-icon*/ {
   fill: var(--accent-color);
-  
 }
 
 .modal-field input {
-   width: 438px;
-   height: 40px;
-   margin: 0;
-   padding: 11px 12px 11px 42px;
-   border: 1px solid rgba(33, 33, 33, 0.2);
-   border-radius: 4px;
-} 
+  width: 438px;
+  height: 40px;
+  margin: 0;
+  padding: 11px 12px 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
 
-.modal-field textarea::placeholder{
+.modal-field textarea::placeholder {
   letter-spacing: 0.01em;
   /* padding-top: 12px;
   padding-left: 16px; */
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-field textarea{
+.modal-field textarea {
   width: 438px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -872,23 +867,26 @@ form {
   padding-left: 16px;
 }
 
-.modal-titel {
-font-weight: 700;
-font-size: 20px;
-line-height: 1.115;
-text-align: center;
-color: var(--title-text-color);
-margin-bottom: 12px;
-margin-top: 40px;
+.modal-field {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--icon-color-header);
+  border: none;
 }
 
-.form-label{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
+.modal-titel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.115;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 12px;
+  margin-top: 40px;
 }
 
 .form-name {
+  display: flex;
   margin-bottom: 4px;
 }
 
@@ -904,14 +902,16 @@ margin-top: 40px;
 .modal-field {
   position: relative;
   display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .modal-item {
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.01em;
-color: var(--icon-color-header);
-margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--icon-color-header);
+  margin-bottom: 4px;
 }
 
 .modal-list {
@@ -923,21 +923,22 @@ margin-bottom: 4px;
   display: flex;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 
 .form-icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-30%);
-    width: 18px;
-    height: 18px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  /* transform: translateY(-30%); */
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-textarea:focus + .form-icon, .form-textarea:not(:placeholder-shown)+ .form-icon {
+.form-textarea:focus + .form-icon,
+.form-textarea:not(:placeholder-shown) + .form-icon {
   appearance: none;
-  
 }
 
 .checkbox {
@@ -948,7 +949,7 @@ margin-bottom: 4px;
   border: 0 !important;
   height: 1px !important;
   width: 1px !important;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .check-label {
@@ -956,20 +957,20 @@ margin-bottom: 4px;
 }
 
 .checkbox-box {
- display: inline-block;
- justify-content: center;
- width: 16px;
- height: 15px;
- border: 1.5px solid var(--title-text-color);
- background-color: var(--primary-white-color);
- border-radius: 2px;
- margin-right: 9px;
- transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border: 1.5px solid var(--title-text-color);
+  background-color: var(--primary-white-color);
+  border-radius: 2px;
+  margin-right: 9px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .checkbox-box {
   background-color: var(--accent-color);
-  border-color: var(--accent-color) ;
+  border-color: var(--accent-color);
   background-image: url(../img/vector.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -979,10 +980,9 @@ margin-bottom: 4px;
 
 .checkbox-link {
   color: var(--accent-color);
-  text-decoration: underline ;
+  text-decoration: underline;
   margin-left: 6px;
 }
-
 
 .form button {
   margin: auto;

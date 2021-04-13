@@ -601,20 +601,23 @@
         <div class="subscription">
           <form>
             <p class="footer-titel">Подпишитесь на рассылку</p>
-            <label>
-              <input
-                class="email-type"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
-            <button type="button" class="subscription-button">
-              Подписаться
-              <svg class="subscription-icon" width="24" height="24">
-                <use href="./img/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="label-footer">
+              <label>
+                <input
+                  class="email-type"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+
+              <button type="button" class="subscription-button">
+                Подписаться
+                <svg class="subscription-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -625,7 +628,7 @@
         <h2 class="modal-titel">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="form js-speaker-form" autocomplete="on">
           <div class="modal-field">
-            <lable class="form-label">
+            <label>
               <span class="form-name">Имя</span>
               <input
                 type="text"
@@ -637,10 +640,10 @@
               <svg class="form-icon">
                 <use href="./img/icons.svg#icon-person"></use>
               </svg>
-            </lable>
+            </label>
           </div>
           <div class="modal-field">
-            <lable class="form-label">
+            <label>
               <span class="form-name">Телефон</span>
               <input
                 type="tel"
@@ -652,10 +655,10 @@
               <svg class="form-icon">
                 <use href="./img/icons.svg#icon-phone-modal"></use>
               </svg>
-            </lable>
+            </label>
           </div>
           <div class="modal-field">
-            <lable class="form-label">
+            <label>
               <span class="form-name">Почта</span>
               <input
                 type="email"
@@ -667,26 +670,23 @@
               <svg class="form-icon">
                 <use href="./img/icons.svg#icon-email-modal"></use>
               </svg>
-            </lable>
+            </label>
           </div>
           <div class="modal-field comments">
-            <lable class="form-label">
+            <label>
               <span class="form-name">Комментарий</span>
-              <textarea
-                type="comment"
-                rows="5"
-                placeholder="Введите текст"
-                class="form-textarea"
-              ></textarea>
-            </lable>
+              <textarea name="comment" rows="5" placeholder="Введите текст" class="form-textarea"></textarea>
+            </label>
           </div>
 
-          <div class="check-label">  
-          <label class="label-form"> 
-            <input class="checkbox" type="checkbox" name="checkbox">
-            <span class="checkbox-box"></span>
-            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span><a class="checkbox-link" herf="/">Условия договора</a>
-          </label>
+          <div class="check-label">
+            <label>
+              <input class="checkbox" type="checkbox" name="checkbox" />
+              <span class="checkbox-box"></span>
+              <span class="checkbox-text"
+                >Соглашаюсь с рассылкой и принимаю</span
+              ><a class="checkbox-link" href="">Условия договора</a>
+            </label>
           </div>
           <button type="submit">Отправить</button>
         </form>
@@ -705,10 +705,8 @@
                 e.preventDefault();
 
                 new FormData(e.currentTarget).forEach((value, name) =>
-                  console.log("${name}: ${value}")
+                  console.log(`${name}: ${value}`)
                 );
-
-                e.currentTarget.reset();
               });
           })();
         </script>
